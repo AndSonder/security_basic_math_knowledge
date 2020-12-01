@@ -8,6 +8,6 @@
 
   https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related
 
-- [ ] [整除的可能性](./Divisible_possibilities.md)
+- [ ] [整除的可能性](./Divisible_possibilties.md)
 - [ ] [同余](./congruence.md)
 
