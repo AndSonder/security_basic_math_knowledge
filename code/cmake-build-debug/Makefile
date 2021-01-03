@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named code1
+
+# Build rule for target.
+code1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 code1
+.PHONY : code1
+
+# fast build rule for target.
+code1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code1.dir/build.make CMakeFiles/code1.dir/build
+.PHONY : code1/fast
+
+#=============================================================================
 # Target rules for targets named code
 
 # Build rule for target.
@@ -142,6 +155,33 @@ code: cmake_check_build_system
 code/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/build
 .PHONY : code/fast
+
+Extended_Euclidean_algorithm.o: Extended_Euclidean_algorithm.cpp.o
+
+.PHONY : Extended_Euclidean_algorithm.o
+
+# target to build an object file
+Extended_Euclidean_algorithm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code1.dir/build.make CMakeFiles/code1.dir/Extended_Euclidean_algorithm.cpp.o
+.PHONY : Extended_Euclidean_algorithm.cpp.o
+
+Extended_Euclidean_algorithm.i: Extended_Euclidean_algorithm.cpp.i
+
+.PHONY : Extended_Euclidean_algorithm.i
+
+# target to preprocess a source file
+Extended_Euclidean_algorithm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code1.dir/build.make CMakeFiles/code1.dir/Extended_Euclidean_algorithm.cpp.i
+.PHONY : Extended_Euclidean_algorithm.cpp.i
+
+Extended_Euclidean_algorithm.s: Extended_Euclidean_algorithm.cpp.s
+
+.PHONY : Extended_Euclidean_algorithm.s
+
+# target to generate assembly for a file
+Extended_Euclidean_algorithm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code1.dir/build.make CMakeFiles/code1.dir/Extended_Euclidean_algorithm.cpp.s
+.PHONY : Extended_Euclidean_algorithm.cpp.s
 
 judge_prime_number.o: judge_prime_number.cpp.o
 
@@ -179,6 +219,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... code"
+	@echo "... code1"
+	@echo "... Extended_Euclidean_algorithm.o"
+	@echo "... Extended_Euclidean_algorithm.i"
+	@echo "... Extended_Euclidean_algorithm.s"
 	@echo "... judge_prime_number.o"
 	@echo "... judge_prime_number.i"
 	@echo "... judge_prime_number.s"
