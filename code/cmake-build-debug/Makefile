@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named code2
+
+# Build rule for target.
+code2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 code2
+.PHONY : code2
+
+# fast build rule for target.
+code2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/build
+.PHONY : code2/fast
+
+#=============================================================================
 # Target rules for targets named code1
 
 # Build rule for target.
@@ -155,6 +168,36 @@ code: cmake_check_build_system
 code/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/build
 .PHONY : code/fast
+
+Euclidean_algorithm.o: Euclidean_algorithm.cpp.o
+
+.PHONY : Euclidean_algorithm.o
+
+# target to build an object file
+Euclidean_algorithm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/Euclidean_algorithm.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/Euclidean_algorithm.cpp.o
+.PHONY : Euclidean_algorithm.cpp.o
+
+Euclidean_algorithm.i: Euclidean_algorithm.cpp.i
+
+.PHONY : Euclidean_algorithm.i
+
+# target to preprocess a source file
+Euclidean_algorithm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/Euclidean_algorithm.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/Euclidean_algorithm.cpp.i
+.PHONY : Euclidean_algorithm.cpp.i
+
+Euclidean_algorithm.s: Euclidean_algorithm.cpp.s
+
+.PHONY : Euclidean_algorithm.s
+
+# target to generate assembly for a file
+Euclidean_algorithm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/Euclidean_algorithm.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/Euclidean_algorithm.cpp.s
+.PHONY : Euclidean_algorithm.cpp.s
 
 Extended_Euclidean_algorithm.o: Extended_Euclidean_algorithm.cpp.o
 
@@ -220,6 +263,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... code"
 	@echo "... code1"
+	@echo "... code2"
+	@echo "... Euclidean_algorithm.o"
+	@echo "... Euclidean_algorithm.i"
+	@echo "... Euclidean_algorithm.s"
 	@echo "... Extended_Euclidean_algorithm.o"
 	@echo "... Extended_Euclidean_algorithm.i"
 	@echo "... Extended_Euclidean_algorithm.s"

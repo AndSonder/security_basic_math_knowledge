@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/code.dir/Euclidean_algorithm.cpp.o"
   "CMakeFiles/code.dir/judge_prime_number.cpp.o"
   "code"
   "code.pdb"

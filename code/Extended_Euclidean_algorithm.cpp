@@ -54,7 +54,9 @@ int main() {
 };
 
 /**  Example
+IN:
 1613 3589
+OUT:
  j       sj       tj   q{j+1}   r{j+1}
 -3        0        0        0     3589
 -2        1        0        0     1613
