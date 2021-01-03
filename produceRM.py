@@ -36,7 +36,7 @@ def produce_readme_file(code_list):
     """
     basic = "- [ ] [{}]({})\n"
     for item in code_list:
-        code_name = basic.format(item, './code/' + item)
+        code_name = basic.format(item[:-4], './code/' + item)
         global basic_readme_file
         basic_readme_file += code_name
 

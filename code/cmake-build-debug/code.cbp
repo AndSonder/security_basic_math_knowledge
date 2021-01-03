@@ -83,9 +83,6 @@
 		<Unit filename="/Users/keter/Documents/security_basic_math_knowledge/code/judge_prime_number.cpp">
 			<Option target="code"/>
 		</Unit>
-		<Unit filename="/Users/keter/Documents/security_basic_math_knowledge/code/main.cpp">
-			<Option target="code"/>
-		</Unit>
 		<Unit filename="/Users/keter/Documents/security_basic_math_knowledge/code/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
