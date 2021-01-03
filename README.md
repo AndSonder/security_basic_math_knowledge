@@ -1,15 +1,9 @@
-# 信息安全数学基础总结
 
-- Keter在学习信息安全数学基础
+# 信息安全数学基础
 
-- 我愿叫他信息安全数学定理大全   完全🉑️
+- coronaPolvo在学习信息安全数学基础
 
-- 没转Chrome插件看不了latex公式，可以到这里安装一下：
 
-  https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related
-  
-  不在这里更新了，信息安全数学基础迁移到我的博客里去更新了
+在学习信息安全数学基础的过程中发现很多的算法都可以使用代码进行实现，而且实现的过程会很加深你对他的理解。这个仓库用来记录下来一些算法的代码实现
 
-- [ ] [整除的可能性](./Divisible_possibilties.md)
-- [ ] [同余](./congruence.md)
-
+- [ ] [judge_prime_number.cpp](./code/judge_prime_number.cpp)
