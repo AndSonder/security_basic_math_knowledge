@@ -74,6 +74,7 @@ CMAKE_BINARY_DIR = /Users/keter/Documents/security_basic_math_knowledge/code/cma
 
 # The main recursive "all" target.
 all: CMakeFiles/code2.dir/all
+all: CMakeFiles/code3.dir/all
 all: CMakeFiles/code1.dir/all
 all: CMakeFiles/code.dir/all
 
@@ -86,6 +87,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/code2.dir/clean
+clean: CMakeFiles/code3.dir/clean
 clean: CMakeFiles/code1.dir/clean
 clean: CMakeFiles/code.dir/clean
 
@@ -117,6 +119,33 @@ code2: CMakeFiles/code2.dir/rule
 CMakeFiles/code2.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/clean
 .PHONY : CMakeFiles/code2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/code3.dir
+
+# All Build rule for target.
+CMakeFiles/code3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code3.dir/build.make CMakeFiles/code3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code3.dir/build.make CMakeFiles/code3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target code3"
+.PHONY : CMakeFiles/code3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/code3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/code3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/code3.dir/rule
+
+# Convenience name for target.
+code3: CMakeFiles/code3.dir/rule
+
+.PHONY : code3
+
+# clean rule for target.
+CMakeFiles/code3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code3.dir/build.make CMakeFiles/code3.dir/clean
+.PHONY : CMakeFiles/code3.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/code1.dir

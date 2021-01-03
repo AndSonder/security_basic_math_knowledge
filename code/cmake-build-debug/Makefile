@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /Users/keter/Documents/security_basic_math_knowledge/code/cma
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -97,6 +86,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -142,6 +142,19 @@ code2: cmake_check_build_system
 code2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/build
 .PHONY : code2/fast
+
+#=============================================================================
+# Target rules for targets named code3
+
+# Build rule for target.
+code3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 code3
+.PHONY : code3
+
+# fast build rule for target.
+code3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code3.dir/build.make CMakeFiles/code3.dir/build
+.PHONY : code3/fast
 
 #=============================================================================
 # Target rules for targets named code1
@@ -226,6 +239,33 @@ Extended_Euclidean_algorithm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code1.dir/build.make CMakeFiles/code1.dir/Extended_Euclidean_algorithm.cpp.s
 .PHONY : Extended_Euclidean_algorithm.cpp.s
 
+high_power_modular_operations.o: high_power_modular_operations.cpp.o
+
+.PHONY : high_power_modular_operations.o
+
+# target to build an object file
+high_power_modular_operations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code3.dir/build.make CMakeFiles/code3.dir/high_power_modular_operations.cpp.o
+.PHONY : high_power_modular_operations.cpp.o
+
+high_power_modular_operations.i: high_power_modular_operations.cpp.i
+
+.PHONY : high_power_modular_operations.i
+
+# target to preprocess a source file
+high_power_modular_operations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code3.dir/build.make CMakeFiles/code3.dir/high_power_modular_operations.cpp.i
+.PHONY : high_power_modular_operations.cpp.i
+
+high_power_modular_operations.s: high_power_modular_operations.cpp.s
+
+.PHONY : high_power_modular_operations.s
+
+# target to generate assembly for a file
+high_power_modular_operations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/code3.dir/build.make CMakeFiles/code3.dir/high_power_modular_operations.cpp.s
+.PHONY : high_power_modular_operations.cpp.s
+
 judge_prime_number.o: judge_prime_number.cpp.o
 
 .PHONY : judge_prime_number.o
@@ -264,12 +304,16 @@ help:
 	@echo "... code"
 	@echo "... code1"
 	@echo "... code2"
+	@echo "... code3"
 	@echo "... Euclidean_algorithm.o"
 	@echo "... Euclidean_algorithm.i"
 	@echo "... Euclidean_algorithm.s"
 	@echo "... Extended_Euclidean_algorithm.o"
 	@echo "... Extended_Euclidean_algorithm.i"
 	@echo "... Extended_Euclidean_algorithm.s"
+	@echo "... high_power_modular_operations.o"
+	@echo "... high_power_modular_operations.i"
+	@echo "... high_power_modular_operations.s"
 	@echo "... judge_prime_number.o"
 	@echo "... judge_prime_number.i"
 	@echo "... judge_prime_number.s"

@@ -17,16 +17,6 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug"/>
 				<Option type="4"/>
@@ -79,6 +69,48 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="code3">
+				<Option output="/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/code3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 code3"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="code3/fast">
+				<Option output="/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/code3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 code3/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="code1">
 				<Option output="/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/code1" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug"/>
@@ -116,6 +148,16 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 code1/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/keter/Documents/security_basic_math_knowledge/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -170,6 +212,9 @@
 		</Unit>
 		<Unit filename="/Users/keter/Documents/security_basic_math_knowledge/code/Extended_Euclidean_algorithm.cpp">
 			<Option target="code1"/>
+		</Unit>
+		<Unit filename="/Users/keter/Documents/security_basic_math_knowledge/code/high_power_modular_operations.cpp">
+			<Option target="code3"/>
 		</Unit>
 		<Unit filename="/Users/keter/Documents/security_basic_math_knowledge/code/judge_prime_number.cpp">
 			<Option target="code"/>
