@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /Users/keter/Documents/security_basic_math_knowledge/code/cma
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -97,6 +86,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,56 +131,56 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named code2
+# Target rules for targets named high_power_modular_operations
 
 # Build rule for target.
-code2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 code2
-.PHONY : code2
+high_power_modular_operations: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 high_power_modular_operations
+.PHONY : high_power_modular_operations
 
 # fast build rule for target.
-code2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/build
-.PHONY : code2/fast
+high_power_modular_operations/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/high_power_modular_operations.dir/build.make CMakeFiles/high_power_modular_operations.dir/build
+.PHONY : high_power_modular_operations/fast
 
 #=============================================================================
-# Target rules for targets named code3
+# Target rules for targets named judge_prime_number
 
 # Build rule for target.
-code3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 code3
-.PHONY : code3
+judge_prime_number: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 judge_prime_number
+.PHONY : judge_prime_number
 
 # fast build rule for target.
-code3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code3.dir/build.make CMakeFiles/code3.dir/build
-.PHONY : code3/fast
+judge_prime_number/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_prime_number.dir/build.make CMakeFiles/judge_prime_number.dir/build
+.PHONY : judge_prime_number/fast
 
 #=============================================================================
-# Target rules for targets named code1
+# Target rules for targets named Euclidean_algorithm
 
 # Build rule for target.
-code1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 code1
-.PHONY : code1
+Euclidean_algorithm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Euclidean_algorithm
+.PHONY : Euclidean_algorithm
 
 # fast build rule for target.
-code1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code1.dir/build.make CMakeFiles/code1.dir/build
-.PHONY : code1/fast
+Euclidean_algorithm/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euclidean_algorithm.dir/build.make CMakeFiles/Euclidean_algorithm.dir/build
+.PHONY : Euclidean_algorithm/fast
 
 #=============================================================================
-# Target rules for targets named code
+# Target rules for targets named Extended_Euclidean_algorithm
 
 # Build rule for target.
-code: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 code
-.PHONY : code
+Extended_Euclidean_algorithm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Extended_Euclidean_algorithm
+.PHONY : Extended_Euclidean_algorithm
 
 # fast build rule for target.
-code/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/build
-.PHONY : code/fast
+Extended_Euclidean_algorithm/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Extended_Euclidean_algorithm.dir/build.make CMakeFiles/Extended_Euclidean_algorithm.dir/build
+.PHONY : Extended_Euclidean_algorithm/fast
 
 Euclidean_algorithm.o: Euclidean_algorithm.cpp.o
 
@@ -188,8 +188,7 @@ Euclidean_algorithm.o: Euclidean_algorithm.cpp.o
 
 # target to build an object file
 Euclidean_algorithm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/Euclidean_algorithm.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/Euclidean_algorithm.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euclidean_algorithm.dir/build.make CMakeFiles/Euclidean_algorithm.dir/Euclidean_algorithm.cpp.o
 .PHONY : Euclidean_algorithm.cpp.o
 
 Euclidean_algorithm.i: Euclidean_algorithm.cpp.i
@@ -198,8 +197,7 @@ Euclidean_algorithm.i: Euclidean_algorithm.cpp.i
 
 # target to preprocess a source file
 Euclidean_algorithm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/Euclidean_algorithm.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/Euclidean_algorithm.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euclidean_algorithm.dir/build.make CMakeFiles/Euclidean_algorithm.dir/Euclidean_algorithm.cpp.i
 .PHONY : Euclidean_algorithm.cpp.i
 
 Euclidean_algorithm.s: Euclidean_algorithm.cpp.s
@@ -208,8 +206,7 @@ Euclidean_algorithm.s: Euclidean_algorithm.cpp.s
 
 # target to generate assembly for a file
 Euclidean_algorithm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/Euclidean_algorithm.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/Euclidean_algorithm.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Euclidean_algorithm.dir/build.make CMakeFiles/Euclidean_algorithm.dir/Euclidean_algorithm.cpp.s
 .PHONY : Euclidean_algorithm.cpp.s
 
 Extended_Euclidean_algorithm.o: Extended_Euclidean_algorithm.cpp.o
@@ -218,7 +215,7 @@ Extended_Euclidean_algorithm.o: Extended_Euclidean_algorithm.cpp.o
 
 # target to build an object file
 Extended_Euclidean_algorithm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code1.dir/build.make CMakeFiles/code1.dir/Extended_Euclidean_algorithm.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Extended_Euclidean_algorithm.dir/build.make CMakeFiles/Extended_Euclidean_algorithm.dir/Extended_Euclidean_algorithm.cpp.o
 .PHONY : Extended_Euclidean_algorithm.cpp.o
 
 Extended_Euclidean_algorithm.i: Extended_Euclidean_algorithm.cpp.i
@@ -227,7 +224,7 @@ Extended_Euclidean_algorithm.i: Extended_Euclidean_algorithm.cpp.i
 
 # target to preprocess a source file
 Extended_Euclidean_algorithm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code1.dir/build.make CMakeFiles/code1.dir/Extended_Euclidean_algorithm.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Extended_Euclidean_algorithm.dir/build.make CMakeFiles/Extended_Euclidean_algorithm.dir/Extended_Euclidean_algorithm.cpp.i
 .PHONY : Extended_Euclidean_algorithm.cpp.i
 
 Extended_Euclidean_algorithm.s: Extended_Euclidean_algorithm.cpp.s
@@ -236,7 +233,7 @@ Extended_Euclidean_algorithm.s: Extended_Euclidean_algorithm.cpp.s
 
 # target to generate assembly for a file
 Extended_Euclidean_algorithm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code1.dir/build.make CMakeFiles/code1.dir/Extended_Euclidean_algorithm.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Extended_Euclidean_algorithm.dir/build.make CMakeFiles/Extended_Euclidean_algorithm.dir/Extended_Euclidean_algorithm.cpp.s
 .PHONY : Extended_Euclidean_algorithm.cpp.s
 
 high_power_modular_operations.o: high_power_modular_operations.cpp.o
@@ -245,7 +242,7 @@ high_power_modular_operations.o: high_power_modular_operations.cpp.o
 
 # target to build an object file
 high_power_modular_operations.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code3.dir/build.make CMakeFiles/code3.dir/high_power_modular_operations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/high_power_modular_operations.dir/build.make CMakeFiles/high_power_modular_operations.dir/high_power_modular_operations.cpp.o
 .PHONY : high_power_modular_operations.cpp.o
 
 high_power_modular_operations.i: high_power_modular_operations.cpp.i
@@ -254,7 +251,7 @@ high_power_modular_operations.i: high_power_modular_operations.cpp.i
 
 # target to preprocess a source file
 high_power_modular_operations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code3.dir/build.make CMakeFiles/code3.dir/high_power_modular_operations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/high_power_modular_operations.dir/build.make CMakeFiles/high_power_modular_operations.dir/high_power_modular_operations.cpp.i
 .PHONY : high_power_modular_operations.cpp.i
 
 high_power_modular_operations.s: high_power_modular_operations.cpp.s
@@ -263,7 +260,7 @@ high_power_modular_operations.s: high_power_modular_operations.cpp.s
 
 # target to generate assembly for a file
 high_power_modular_operations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code3.dir/build.make CMakeFiles/code3.dir/high_power_modular_operations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/high_power_modular_operations.dir/build.make CMakeFiles/high_power_modular_operations.dir/high_power_modular_operations.cpp.s
 .PHONY : high_power_modular_operations.cpp.s
 
 judge_prime_number.o: judge_prime_number.cpp.o
@@ -272,7 +269,7 @@ judge_prime_number.o: judge_prime_number.cpp.o
 
 # target to build an object file
 judge_prime_number.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/judge_prime_number.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_prime_number.dir/build.make CMakeFiles/judge_prime_number.dir/judge_prime_number.cpp.o
 .PHONY : judge_prime_number.cpp.o
 
 judge_prime_number.i: judge_prime_number.cpp.i
@@ -281,7 +278,7 @@ judge_prime_number.i: judge_prime_number.cpp.i
 
 # target to preprocess a source file
 judge_prime_number.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/judge_prime_number.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_prime_number.dir/build.make CMakeFiles/judge_prime_number.dir/judge_prime_number.cpp.i
 .PHONY : judge_prime_number.cpp.i
 
 judge_prime_number.s: judge_prime_number.cpp.s
@@ -290,7 +287,7 @@ judge_prime_number.s: judge_prime_number.cpp.s
 
 # target to generate assembly for a file
 judge_prime_number.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/judge_prime_number.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/judge_prime_number.dir/build.make CMakeFiles/judge_prime_number.dir/judge_prime_number.cpp.s
 .PHONY : judge_prime_number.cpp.s
 
 # Help Target
@@ -301,10 +298,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... code"
-	@echo "... code1"
-	@echo "... code2"
-	@echo "... code3"
+	@echo "... Euclidean_algorithm"
+	@echo "... Extended_Euclidean_algorithm"
+	@echo "... high_power_modular_operations"
+	@echo "... judge_prime_number"
 	@echo "... Euclidean_algorithm.o"
 	@echo "... Euclidean_algorithm.i"
 	@echo "... Euclidean_algorithm.s"

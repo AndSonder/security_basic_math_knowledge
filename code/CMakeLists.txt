@@ -3,7 +3,7 @@ project(code)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(code judge_prime_number.cpp Euclidean_algorithm.cpp)
-add_executable(code1 Extended_Euclidean_algorithm.cpp)
-add_executable(code2 Euclidean_algorithm.cpp)
-add_executable(code3 high_power_modular_operations.cpp)
+add_executable(judge_prime_number judge_prime_number.cpp)
+add_executable(Extended_Euclidean_algorithm Extended_Euclidean_algorithm.cpp)
+add_executable(Euclidean_algorithm Euclidean_algorithm.cpp)
+add_executable(high_power_modular_operations high_power_modular_operations.cpp)

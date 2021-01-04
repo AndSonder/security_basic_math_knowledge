@@ -17,7 +17,7 @@ int highPowerModularOperation(int a, int x, int n) {
     int ai = 1, bi = a;
     while (!xBinary.empty()) {
         if (xBinary.front() == 1) {
-            ai = ai * bi;
+            ai = ai * bi % n;
         }
         bi = bi*bi % n;
         xBinary.pop();

@@ -14,6 +14,7 @@ bool judgePrimeNumber(int number) {
     for (i = 2; i < sqrtNum; i++) {
         if (number % i == 0) {
             flag = false;
+            cout << ">>>" << i << endl;
             break;
         }
     }
@@ -30,3 +31,16 @@ int main() {
     else cout << ">>>" << "No";
     return 0;
 }
+
+/** Examples
+In:
+1307
+Out:
+>>>YES
+
+In:
+1309
+Out:
+>>>7
+>>>No
+**/
